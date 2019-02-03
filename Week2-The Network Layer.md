@@ -71,4 +71,44 @@ Subnetting
 
 subnetting: The process of taking a large network and splitting it up into many individual and smaller subnetworks, or subnets
 
+Baxic Binary
+--------
+- 8 bit : 2^8 = 256
+- 4 bit : 2^4 = 16
+- 16 bit : 2^16 = 65536
+  
+- Two of the most important operators are OR and AND  
+- In computer logic, a 1 represents true and a 0 represents false  
+  
+X OR Y = Z  
+"If either X or Y is true, then Z is true; otherwise, it's false."  
+1 OR 0 = 1  
+0 OR 0 = 0  
+  
+Subnet mask :  A way for a computer to use and operators to determine if an IP address exists on the same network
+
+CIDR
+---------
+Network ID
+- 8 bit : Class A
+- 16 bit : Class B
+- 24 bit : Class C
+The sizing of these networks aren't always appropriate for the needs of most businesses  
+  
+Demarcate : To set something off when discussing computer networking  
+  
+Demarcation point: To describe where one network or system ends and another one begins
+
+Routing
+========
+Basic Routing Concepts
+---------
+- Router : A network device that forwards traffic depending on the destination address of that traffic
+  
+Basic routing
+1. Receive data packet
+2. Examines destination IP
+3. Looks up IP destination network in routing table
+4. Forwards traffic to destination
+
 
