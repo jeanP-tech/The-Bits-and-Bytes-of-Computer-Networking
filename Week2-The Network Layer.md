@@ -100,15 +100,51 @@ Demarcate : To set something off when discussing computer networking
 Demarcation point: To describe where one network or system ends and another one begins
 
 Routing
-========
+======
+
 Basic Routing Concepts
----------
-- Router : A network device that forwards traffic depending on the destination address of that traffic
+-------------
+
+Router : A network device that forwards traffic depending on the destination address of that traffic  
   
-Basic routing
+Basic Routing:
 1. Receive data packet
 2. Examines destination IP
 3. Looks up IP destination network in routing table
 4. Forwards traffic to destination
 
+Routing tables
+-----------
+
+The most basic routing table will have four columns
+1. Destination network
+2. Next hop
+3. Total hops
+4. Interface
+
+Interior Gateway Protocols
+------------
+
+Routing protocols  
+- Special protocols the routers use to speak to each other in order to share what information they might have
+- Routing protocols fall into two main categories: interior gateway protocols and exterior gateway protocols
+- Interior gateway protocols are further split into two categories: Link state routing protocols and distance-vector protocols.
+
+Interior gateway protocols
+- Used by routers to share information within a single autonomous system
+
+Autonomous system
+- A collection of networks that all fall under the control of a single network operator
+  
+The two main types of interior gateway protocols are link state routing protocols and distance-vector protocols  
+  
+In computer science, a list is known as a vector  
+  
+- **Distance vector protocols** are pretty simple.
+	- But they don't allow for a router have much information about the state of the world outside of their own direct neighbors.
+	- Becuase a router might be slow to react to a change in the network far away from it
+- Routers using a **link-state protocol** take a more sophisticated approach to determining the best path to a network  
+	- Linked state protocols got their name because each router advertises the state of the link of each of its interfaces
+	- Every router on the system knows every detail about every other router in the system
+	- Link state protocols require both more memory in order to hold all of this data
 
