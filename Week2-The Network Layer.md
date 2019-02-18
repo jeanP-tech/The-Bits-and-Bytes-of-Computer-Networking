@@ -148,3 +148,25 @@ In computer science, a list is known as a vector
 	- Every router on the system knows every detail about every other router in the system
 	- Link state protocols require both more memory in order to hold all of this data
 
+Exterior Gateway Protocols
+-----------
+
+Internet Assigned Numbers Authority(IANA)
+- A non-profit organization that helps manage things like IP address allocation
+
+- Along with managing IP address allocation, the IANA is also responsible for ASN, or Autonomous System Number allocation.
+
+Autonomous System Number(ASN)
+- Numbers assigned to individual autonomous system
+
+Non-Routable Address Space
+--------------
+
+- When IP was first defined, it defined an IP address as a single 32-bit number.  
+- A single 32-bit number can represent 4,294,967,295
+- However, the IPv4 standard doesn't even have enough IP addresses available for every person on the planet
+- In 1996, RFC 1918 was published
+- RFC stands for Request for Comments
+- RFC 1918, outlined a number of networks that would be defined as non-routable address space
+	- They are ranges of IPs set aside for use by anyone that cannot be routed to.
+- RFC 1918 defined three ranges of IP addresses
