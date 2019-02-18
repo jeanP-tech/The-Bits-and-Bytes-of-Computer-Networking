@@ -170,3 +170,6 @@ Non-Routable Address Space
 - RFC 1918, outlined a number of networks that would be defined as non-routable address space
 	- They are ranges of IPs set aside for use by anyone that cannot be routed to.
 - RFC 1918 defined three ranges of IP addresses
+	- 10.0.0.0/8
+	- 172.16.0.0/12
+	- 192.168.0.0/16
