@@ -47,3 +47,57 @@ Urgent pointer field
   
 Options field
 - It is sometimes used for more complicated flow control protocols
+
+TCP Control Flags and the Three-way Handshake
+----------------
+> The Six TCP Control Flags
+  
+URG(urgent)
+- A value of one here indicates that the segment is considered urgent and that the urgent pointer field has more data about this
+  
+ACK(acknowleged)
+- A value of one in this field means that the acknowlegement number field shoul be examined
+  
+PSH(push)
+- The transmitting device wants the receiving device to push currently-buffered data to the application on the receiving end as soon as possible
+  
+RST (reset)
+- One of the sides in a TCP connection hasn't been able to properly recover from a series of missing or malformed segments
+  
+SYN (synchronize)
+- It's used when first establishing a TCP connection and makes sure the receiving end knows to examine the sequence number field
+  
+FIN (finish)
+- When this flag is set to one, it means the transmitting computer doesn't have any more data to send and the connection can be closed
+  
+> Handshake
+- A way for two devices to ensure that they're speaking the same protocol and will be able to understand each other
+
+TCP Socket States
+----------
+Socket
+- The instantiation of an end-point in a potential TCP connection
+  
+Instantiation
+- The actual implementation of something defined elsewhere
+  
+LISTEN
+- A TCP socket is ready and listening for incoming connections
+  
+SYN_SENT
+- A synchronization request has been sent, but the connection hasn't been established yet
+  
+SYN-RECEIVED
+- A socket previously in a LISTEN state has received a synchronization request and sent a SYN/ACK back
+  
+ESTABLISHED
+- The TCP connection is in working order and both sides are free to send each other data
+  
+FIN_WAIT
+- A FIN has been sent, but the corresponding ACK from the other end hasn't been received yet
+  
+CLOSE_WAIT
+- The connection has been closed at the TCP layer, but that the application that opened the socket hasn't released its hold on the socket yet
+  
+CLOSED
+- The connection has been fully terminated and that no further communication is possible
