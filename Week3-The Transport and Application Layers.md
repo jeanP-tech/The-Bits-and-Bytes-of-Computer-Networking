@@ -101,3 +101,26 @@ CLOSE_WAIT
   
 CLOSED
 - The connection has been fully terminated and that no further communication is possible
+
+Connection-oriented and Connectionless Protocols
+--------------
+Connection-oriented protocol
+- TCP
+- Establishes a connection, and uses this to ensure that all data has been properly transmitted
+- A connection at the transport layer implies that every segent of data sent is acknowledged
+- 
+
+- IP and Ethernet use checksums to ensure that all the data was correct.
+
+Connectionless protocols
+- UDP (User Dataram Protocol)
+- ex) Streaming video
+	- It doesn't really matter if a few get lost along the way
+
+Firewalls
+--------
+
+Firewall
+- A device that blocks traffic that meets certain criteria
+
+- Firewalls that operate at the transportation layer will generally have a configuration that enables them to block traffic to certain ports while allowing traffic to other ports
