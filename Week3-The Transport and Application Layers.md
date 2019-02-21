@@ -107,8 +107,7 @@ Connection-oriented and Connectionless Protocols
 Connection-oriented protocol
 - TCP
 - Establishes a connection, and uses this to ensure that all data has been properly transmitted
-- A connection at the transport layer implies that every segent of data sent is acknowledged
-- 
+- A connection at the transport layer implies that every segent of data sent is acknowledged 
 
 - IP and Ethernet use checksums to ensure that all the data was correct.
 
@@ -124,3 +123,31 @@ Firewall
 - A device that blocks traffic that meets certain criteria
 
 - Firewalls that operate at the transportation layer will generally have a configuration that enables them to block traffic to certain ports while allowing traffic to other ports
+
+The Application Layer
+==========
+The Application Layer
+----------
+- In the Application layer, there are so many different protocols in use, it wouldn't make sense for us to cover them.
+
+- Web servers and Web browers
+- Web browers - Chrome, Internet Explorer, Safari...
+- Web servers - Microsoft IIS, Apache, nginx...
+- For web traffic, the application layer protocol is known as HTTP.
+- All of these different web browsers and web servers have to communicate using the same HTTP protocol specifications in order to ensure interoperability.
+
+The Application Layer and the OSI Model
+-------------
+OSI (Open Systems Interconnection)
+- It's often used in academic settings or by various network certification organizations
+- The OSI moel has seven layers
+	- Application, Presentation, Session, Transport, Network, Data link, Physical
+	- Session Layer  		- Facilitating the communication between actual applications and the transport layer
+		- Takes application layer data and hands it off to the presentation layer
+	- Presentation Layer
+		- Responsible for making sure that the unencapsulated application layer data is able to be understood by the application in question 
+		- This is the part of an operating system that might handle encryption or compression of data
+
+All the Layers Working in Unison
+-----------
+
