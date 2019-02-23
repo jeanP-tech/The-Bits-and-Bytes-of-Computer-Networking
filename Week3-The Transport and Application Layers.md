@@ -18,9 +18,9 @@ Dissection of a TCP Segment
 ------------
 TCP segment
 - Made up of a TCP header and a data section
-
+  
 A TCP header itself is split into lots of fields.
-
+  
 Destination port
 - The port of the service the traffic is intended for 
   
@@ -34,7 +34,7 @@ Achnowledgement number
 - The number of the next expected segment  
   
 Data offset field
-- A 4 - bit number that communicates how long the TCP header for this segment is  
+- A 4-bit number that communicates how long the TCP header for this segment is  
   
 TCP window
 - Specifies the range of sequence numbers that might be sent before an acknowledgement is required
@@ -148,6 +148,4 @@ OSI (Open Systems Interconnection)
 		- Responsible for making sure that the unencapsulated application layer data is able to be understood by the application in question 
 		- This is the part of an operating system that might handle encryption or compression of data
 
-All the Layers Working in Unison
------------
 
